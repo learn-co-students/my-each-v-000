@@ -12,10 +12,10 @@ describe "my_each" do
     end
   end
 
-  it "does not call on while or puts" do 
+  it "does not call on puts" do 
     file = File.read('./my_each.rb')
     contents = file.split(" ")
-    expect(contents).to_not include("while" || "puts")
+    expect(contents).to_not include("puts")
   end
 
 
