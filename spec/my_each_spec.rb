@@ -52,10 +52,7 @@ describe "my_each" do
 
   it "returned array contains the same elements as the original collection" do
     tas = ['arel', 'jon', 'logan', 'spencer']
-    # array may be modified by the iteration function so 
-    # we cannot use it for verifying the results
-    # therefore we create a new copy using the clone method
-    tas_original = tas.clone
+
 
     # run the method
     # check if it returns correct values
@@ -100,8 +97,7 @@ describe "my_each" do
   it "only single element is passed into block" do
 
     tas = ['arel', 'jon', 'logan', 'spencer']
-    expected = tas.length
-    times_called = 0
+
 
     my_each(tas) do |ta|
       # cannot be an array
