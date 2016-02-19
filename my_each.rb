@@ -4,7 +4,6 @@ def my_each(lunch) # put argument(s) here
   while lngth < lunch.size
     yield lunch[lngth]   #"#{lunch}"
     lngth += 1
-
   end
 lunch
 end
