@@ -6,7 +6,3 @@ def my_each(watermelon)
   end
   watermelon
 end
-
-my_each(['hi', 'hello', 'bye', 'goodbye']) do |name|
-  "#{name}"
-end
