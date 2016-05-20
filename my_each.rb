@@ -1,4 +1,3 @@
-words = [1, 2, 3, 4]
 def my_each(words)
   count = 0
   while count < words.length
@@ -7,4 +6,3 @@ def my_each(words)
   end
    words
  end
-#
