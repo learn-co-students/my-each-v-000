@@ -1,10 +1,9 @@
-require 'pry'
-def my_each(array)
-  number = 0
-  while number < array.length
 
-    yield array[number]
-  number = number + 1
+def my_each(array)
+  count = 0
+  while count < array.length
+    yield array[count]
+  count += 1
   end
   return array
 end
