@@ -64,7 +64,7 @@ describe "my_each" do
     # check if it returns correct values
     expect(my_each(tas) do |ta|
       # Do nothing on yield
-    end).to contain_exactly('arel', 'jon', 'logan', 'spencer')
+    end).to eq(tas_original)
 
   end
 
