@@ -8,7 +8,3 @@ def my_each(words)
   end
   words
 end
-
-my_each(words) do |words|
-	 words
- end
