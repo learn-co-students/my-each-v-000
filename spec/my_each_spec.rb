@@ -8,8 +8,8 @@ describe "my_each" do
     expect(file).to_not include(".each")
   end
 
-  it "does not call on puts" do
-    expect(file).to_not include("puts")
+  it "calls on puts" do
+    expect(file).to include("puts")
   end
 
   it "calls on while" do
