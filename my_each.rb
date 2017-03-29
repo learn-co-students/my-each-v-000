@@ -1,8 +1,7 @@
 
  def my_each(array) 
- length = array.size
  i = 0
- while i<length
+ while i<array.size
    yield array[i]
    i += 1
  end
