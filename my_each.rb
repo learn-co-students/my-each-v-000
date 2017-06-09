@@ -5,7 +5,8 @@ def my_each(collection) # put argument(s) here
     yield collection[i]
     i=i+1
   end
+  collection
 end
 
 
-my_each([1, 2, 3, 4]) {|item| puts item}
+my_each([1, 2, 3, 4]) {|item| print item}
