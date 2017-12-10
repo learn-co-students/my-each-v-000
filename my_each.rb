@@ -8,13 +8,6 @@ def my_each(my_arg)# put argument(s) here
     end
     my_arg
   else
-     "Did you check your block?"
+     print "Did you check your block?"
   end
 end
-
-# calling method
-=begin
-my_each() do |word| 
-  puts word
-end
-=end
