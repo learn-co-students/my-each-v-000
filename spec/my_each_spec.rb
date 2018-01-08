@@ -39,7 +39,7 @@ describe "my_each" do
   it "can handle an empty collection" do
     empty_array = []
 
-    saved_block = Proc.new {
+      saved_block = Proc.new {
       my_each(empty_array) do |x|
         raise "This block should not run!"
       end
