@@ -6,3 +6,5 @@ def my_each(words)
   end
   words
 end
+
+#i really do not understand this 
