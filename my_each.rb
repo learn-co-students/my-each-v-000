@@ -6,7 +6,3 @@ def my_each (array)
    end
    array
 end
-
-my_each([1,3,5,7]) do |item|
-  item
-end
