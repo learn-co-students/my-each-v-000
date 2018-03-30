@@ -1,3 +1,17 @@
-def my_each # put argument(s) here
+#require 'pry'
+
+def my_each (array) # put argument(s) here
   # code here
+  if block_given?
+    i = 0
+      while i < array.length
+        yield (array[i])
+        i += 1
+      end
+      array
+    else
+     "Was there a block given?"
+    end
+
+#binding.pry
 end
