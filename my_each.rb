@@ -1,10 +1,11 @@
-def my_each(proc = nil)
-  length.times do |index|
-    if proc == nil
-      yield(self[index])
-    else
-      proc.call(self[index])
-    end
+def my_each(collection)
+  index = 0
+  limit = collection.size
+
+  while index < limit
+    yield(collection[index])
+    index += 1
   end
-  self
+
+  collection
 end
