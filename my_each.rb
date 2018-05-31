@@ -1,3 +1,8 @@
-def my_each # put argument(s) here
-  # code here
+def my_each(words)
+  iterator = 0
+  while iterator < words.length 
+    yield words[iterator]
+  iterator += 1    
+  end
+  words
 end
