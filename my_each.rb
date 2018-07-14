@@ -1,3 +1,8 @@
-def my_each # put argument(s) here
-  # code here
+def my_each(peach)
+  index = 0
+  while index < peach.length
+    yield(peach[index])
+    index +=1
+  end
+  peach
 end
