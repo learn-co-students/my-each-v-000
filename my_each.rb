@@ -1,7 +1,7 @@
 def my_each(array) # put argument(s) here
   # code here
   
-  if block_given?
+  if block_given? # This if/else may not be necessary for this lab.
     counter = 0 
     while counter < array.size 
       yield array[counter]
