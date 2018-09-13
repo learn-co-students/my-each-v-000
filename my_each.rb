@@ -5,8 +5,8 @@ def my_each(collection) # put argument(s) here
       yield(collection[i])
       i = i + 1
     end
-    return collection
+    collection
   else
-    return collection
+    collection
   end
 end
