@@ -1,8 +1,8 @@
-def my_each(array)
+def my_each(argument)
   i = 0
-  while i < array.length
-    yield(array[i])
+  while i < argument.length
+    yield(argument[i])
     i = i + 1
   end
-  array
+  argument
 end
