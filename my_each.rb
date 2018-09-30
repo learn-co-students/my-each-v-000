@@ -1,5 +1,11 @@
 def my_each(array)
-  array.do |n|
-    puts n
+  count = 0
+  while count < array.length
+    yield array[count]
+    count += 1
   end
+  array
 end
+
+# def yielding
+# end
